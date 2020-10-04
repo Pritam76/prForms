@@ -1,0 +1,39 @@
+GET http://localhost:3000/users
+###
+
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "name":"Pritam",
+    "password":"1234",
+    "email":"abc@xyz.com"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name":"Pritam",
+    "password":"1234"
+}
+
+
+
+###
+GET http://localhost:3000/posts
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUHJpdGFtIiwiaWF0IjoxNTk5Mzg5MDIxfQ.kJVggXthwnZmDVjXma-EDtPPOm7yHthlZhB3Ycc_7x8
+
+###
+GET http://localhost:3000/questionStore
+
+
+###
+POST  http://localhost:3000/questionget
+Content-Type: application/json
+
+{
+    "questionpaperid": "LTOK"
+}
